@@ -3,7 +3,7 @@ import ItemsCard from './ItemsCard/ItemsCard'
 
 import useStyles from './styles'
 
-const Items = ({ items }) => {
+const Items = ({ items, handleAddToCart }) => {
     const classes = useStyles();
 
     return (
@@ -12,8 +12,9 @@ const Items = ({ items }) => {
                 <Grid container justify="center" spacing={4}>
                     {items.map((item) => (
                         <Grid item key ={item.id} xs={12} sm={6} md={4} lg={3}>
-                            <ItemsCard
-                                item={item}
+                            <ItemsCard 
+                                item={item} 
+                                handleAddToCart={handleAddToCart} 
                             />
                         </Grid>
                     ))}
