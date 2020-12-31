@@ -14,6 +14,9 @@
 # ignore env
 .env
 
+# ignore lintcache
+.eslintcache
+
 # misc
 .DS_Store
 .env.local
